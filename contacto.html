@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Escuela de Masajes</title>
+    <link rel="shortcut icon" href="/static/img/spa.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/contacto.css">
+ 
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contacto</h1>
+        <section class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <input type="tel" name="phone" placeholder="Tu número de teléfono">
+                <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Información de contacto</h2>
+            <p>Dirección: Calle Principal 123, Ciudad</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@escuelademasajes.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Escuela de Masajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Script específico para la página de contacto
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Aquí puedes agregar la lógica para enviar el formulario
+            alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

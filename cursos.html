@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Escuela de Masajes</title>
+    <link rel="shortcut icon" href="/static/img/imagenes.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/cursos.css">
+ 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Logo Escuela de Masajes" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nuestros Cursos</h1>
+        <div class="courses-grid">
+            <!-- Repite este bloque 9 veces, cambiando el contenido para cada curso -->
+            <div class="course-card">
+                <img src="curso1.jpg" alt="Curso de Masaje Relajante" class="course-image">
+                <div class="course-content">
+                    <h2 class="course-title">Masaje Relajante</h2>
+                    <p class="course-description">Aprende técnicas de masaje para reducir el estrés y promover la relajación.</p>
+                    <button class="add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+            <!-- Fin del bloque de curso -->
+
+            <!-- Repite el bloque anterior 8 veces más, cambiando el contenido para cada curso -->
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Escuela de Masajes. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp">
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        // Script para manejar la adición de cursos al carrito
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function() {
+                const courseTitle = this.closest('.course-card').querySelector('.course-title').textContent;
+                alert(`El curso "${courseTitle}" ha sido agregado al carrito.`);
+                // Aquí puedes agregar la lógica real para añadir al carrito
+            });
+        });
+    </script>
+</body>
+</html>
