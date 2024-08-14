@@ -1,5 +1,12 @@
+#hero{
+      background-image: url('https://img.freepik.com/foto-gratis/belleza-spa_144627-46441.jpg?ga=GA1.1.1178690691.1723608825&semt=ais_hybrid');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+  }
+  
 header {
-    background-color: #333;
+    background-color: #c35d5d;
     color: #fff;
     padding: 1rem;
 }
@@ -51,4 +58,22 @@ header {
         margin-left: 0;
         margin-right: 1rem;
     }
+}
+
+#hero {
+    display: flex;
+    justify-content:center;
+}
+
+#mision {
+    display: flex;
+    justify-content:center;
+}
+#ofertas {
+    display: flex;
+    justify-content:center;
+}
+#exitos {
+    display: flex;
+    justify-content:center;
 }
